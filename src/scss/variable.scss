@@ -1,0 +1,25 @@
+
+%ff{
+    font-family: Roboto;
+    text-decoration: none;
+}
+
+%lst{
+    list-style-type: none;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+
+%lap{
+    content: "";
+    display: block;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.00);
+    @include size(34px, 34px);
+    position: relative;
+    bottom: 27px;
+    right: 2px;
+    
+}
+
+

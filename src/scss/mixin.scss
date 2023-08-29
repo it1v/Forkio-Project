@@ -1,0 +1,23 @@
+@mixin display($d,$jc,$ai) {
+    display: $d;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin marginTB($mt,$mb){
+    margin-top: $mt;
+    margin-bottom: $mb;
+}
+
+@mixin fontz($f,$h,$w,$c){
+    font-size: $f;
+    line-height: $h;
+    font-weight: $w;
+    color: $c;
+}
+
+@mixin size($wid,$heig){
+    width: $wid;
+    height: $heig;
+}
+
