@@ -5,7 +5,10 @@ flsFunctions.isWebp();
 import Swiper, { Navigation, Pagination } from 'swiper';
 const swiper = new Swiper();
 
-import script from "./script.js";
+
+// як і зі стилями, пропоную просто тут підключати наші файли
+// import script from "./script.js";
+
 
 
 
