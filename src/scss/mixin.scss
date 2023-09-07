@@ -11,6 +11,12 @@
     margin-bottom: $mb;
 }
 
+//паддінг
+@mixin paddingTB($pt,$pb){
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+
 //стиль шрифт
 @mixin fontz($f,$h,$w,$c){
     font-size: $f;

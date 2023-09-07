@@ -1,0 +1,188 @@
+@media (max-width: 320px){
+    .people-talking{
+        min-width: 320px;
+        background-image: url(../img/testmonials-bg\ 1.png);
+        @include back(cover,no-repeat,center,inherit);
+        text-align: center;
+        .people-talking_box{
+            @include display(flex,center,center);
+            flex-direction: column;
+            padding: 0 10px 0 10px;
+            h2{
+                @include fontz(36px,48px,700,#FFF);
+                @include paddingTB(57px, 53px); 
+            }
+            .people-talking_list{
+                li{
+                    height: 166px;
+                    @include display(flex,space-around,center);
+                    flex-direction: column; 
+                    &:not(:last-child){
+                        margin-bottom: 45px;
+                    }
+                    p{
+                        @include fontz(16px,24px,700,#FFF);
+                        }
+                }
+            }
+            .people-talking_text{
+                @include fontz(14px,21px,400,#A291A5);
+                @include paddingTB(37px, 22px); 
+            }
+
+            &::after{
+                content: "";
+                display: block;
+                width: 245px;
+                border-bottom: 2px solid #645766;
+                padding-bottom: 12px;
+                      
+             }
+        }
+    }
+    
+}
+@media (min-width: 320px){
+    .people-talking{
+        background-image: url(../img/testmonials-bg\ 1.png);
+        @include back(cover,no-repeat,center,inherit);
+        text-align: center;
+        .people-talking_box{
+            @include display(flex,center,center);
+            flex-direction: column;
+            padding: 0 10px 0 10px;
+            h2{
+                @include fontz(36px,48px,700,#FFF);
+                @include paddingTB(57px, 53px); 
+            }
+            .people-talking_list{
+                li{
+                    height: 166px;
+                    @include display(flex,space-around,center);
+                    flex-direction: column; 
+                    &:not(:last-child){
+                        margin-bottom: 45px;
+                    }
+                    p{
+                        @include fontz(16px,24px,700,#FFF);
+                        }
+                }
+            }
+            .people-talking_text{
+                @include fontz(14px,21px,400,#A291A5);
+                @include paddingTB(37px, 22px); 
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 245px;
+                border-bottom: 2px solid #645766;
+                padding-bottom: 12px;
+                      
+             }
+           
+        }
+    }
+    
+}
+
+@media (min-width: 480px){
+    .people-talking{
+        .people-talking_box{
+            @include display(flex,center,center);
+            flex-direction: column;
+            padding: 0 10px 0 10px;
+            h2{
+                @include fontz(42px,44px,700,#FFF);
+                @include paddingTB(86px, 87px); 
+            }
+            .people-talking_list{
+                display: grid;
+                grid-template-areas:
+                "pt_post1 pt_post2"
+                "pt_post3 pt_post4"
+                "pt_post5 pt_post6"
+                ;
+                row-gap: 56px;
+                column-gap: 90px;
+                li{ 
+                    &:not(:last-child){
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .people-talking_text{
+                @include paddingTB(68px, 20px); 
+            }
+
+            &::after{
+                content: "";
+                display: block;
+                width: 555px;
+                border-bottom: 2px solid #645766;
+                padding-bottom: 12px;
+                      
+             }
+        }
+    }
+    
+}
+
+@media (min-width: 993px){
+    .people-talking{
+        @include display(flex,center,center);
+        .people-talking_box{
+            @include display(flex,center,center);
+            flex-direction: column;
+            max-width: 1200px;
+            h2{
+                @include fontz(48px,50px,700,#FFF);
+                @include paddingTB(108px, 82px); 
+            }
+            .people-talking_list{
+                display: grid;
+                grid-template-areas:
+                "pt_post1 pt_post2 pt_post3"
+                "pt_post4 pt_post5 pt_post6"
+                ;
+                row-gap: 112px;
+                column-gap: 90px;
+                li{ 
+                    &:not(:last-child){
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .people-talking_text{
+                @include paddingTB(119px, 19px); 
+            }
+
+            &::after{
+                content: "";
+                display: block;
+                width: 780px;
+                border-bottom: 2px solid #645766;
+                padding-bottom: 12px;
+                      
+             }
+        }
+    }
+    
+}
+
+
+.people-talking_box{
+    h2{
+        @extend %ffM;
+    }
+    .people-talking_list{
+        li{
+            p{
+        @extend %ffLl;         
+            }
+        }
+    }
+    .people-talking_text{
+        @extend %ffL;                
+    }
+}

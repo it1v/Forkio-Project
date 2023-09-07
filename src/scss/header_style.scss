@@ -1,5 +1,169 @@
+.main_content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 320px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+     .header_nav{
+         position: absolute;
+         z-index: 1;
+         width: 320px;
+         height: 103px;
+         background: #27262A;
+         @include display(flex,space-around,center);
+         .logo_header_box{
+            position: relative;
+            svg{
+                @include size(43px, 41px); 
+                fill: #8D81AC;
+                &:hover{
+                    fill: #FFF;
+                }
+            }
+        }
+     }
+     .logo_title{
+         display: none;
+     }
+     .header_links{
+         display: none;
+     }
+     .burger_box{
+         @include display(flex,center,center);
+         .off{
+             display: none;
+             position: absolute;
+             svg{
+             &:first-child{
+                 position: absolute;
+             }
+             }
+         }
+         .burger{
+             @include size(26px, 37px); 
+             @include display(flex,space-evenly,flex-end);
+             flex-direction: column;
+             &::before{
+                 content: "";
+                 display: block;
+                 border-radius: 5px;
+                 background-color: #FFF;
+                 @include size(15px, 3px); 
+                 bottom: 0;    
+             }
+             span{
+                 display: block;
+                 border-radius: 5px;
+                 background-color: #FFF;
+                 @include size(26px, 3px); 
+             }
+             &::after{
+                 content: "";
+                 display: block;
+                 border-radius: 5px;
+                 background-color: #FFF;
+                 @include size(26px, 3px); 
+                     
+             }
+         }
+     }
+     .header_nav_button{
+         @include fontz(15px,15px,700,#FFFFFF);
+         border-radius: 40px;
+         background: #8D81AC;
+         @include size(119px, 37px); 
+         border: none;
+         &:hover{
+            color: #8D81AC;
+            background-color: #FFF;
+        }
+     }
+     .burger_nav{
+         position: absolute;
+         display: none;
+         justify-content: space-evenly;
+         align-items: flex-start;
+         flex-direction: column;
+         top: 103px;
+         @include size(293px, 378px); 
+         background-color: #333333;
+         li{
+         @include display(flex,flex-start,center);
+         width: 293px;  
+         padding-bottom: 29px;
+         border-bottom: 1px solid #3b3b3b;
+         &:hover{
+             &::after{
+                 content: "";
+                 display: block;
+                 @include size(8px, 53px); 
+                 background-color: #8D81AC;
+                 position: absolute;
+             }
+         }
+         }
+     }
+     .header_content{
+         @include display(flex,space-between,center);
+         flex-direction: column;
+         background-image: url(../img/backHeaderMobil.png);
+         @include back(cover,no-repeat,center,fixed);
+         height: 591px;
+         .header_title{
+             text-align: center;
+         
+             h1{
+                 margin-top: 152px;
+                 @include fontz(48px,48px,700,#FFFFFF);
+             }
+             h2{
+                 @include fontz(18px,24px,400,#8D81AC);
+                 @include marginTB(19px, 14px); 
+                padding: 0 10px 0 10px;
+ 
+             }
+             h3{
+                 @include fontz(14px,14px,400,#848E97);
+                 text-transform: uppercase;
+ 
+             }
+         }    
+     }
+     .button_content{
+         @include display(flex,center,center);
+         flex-direction: column;
+         position: relative;
+         .header_button-down{
+             border: none;
+             @include size(290px, 45px); 
+             @include fontz(18px,20px,700,#FFFFFF);
+             position: absolute;
+             top: -22px;
+             &:hover{
+                color: #8D81AC;
+                background-color: #FFF;
+            }
+             
+         }
+         span{
+             @include fontz(14px,14px,400,#848E97);
+             margin-top: 35px;
+         }
+     }
+     
+    }
+ }
+
 @media (min-width: 320px){
    .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .header_nav{
         position: absolute;
         z-index: 1;
@@ -7,6 +171,16 @@
         height: 103px;
         background: #27262A;
         @include display(flex,space-around,center);
+        .logo_header_box{
+            position: relative;
+            svg{
+                @include size(43px, 41px); 
+                fill: #8D81AC;
+                &:hover{
+                    fill: #FFF;
+                }
+            }
+        }
     }
     .logo_title{
         display: none;
@@ -59,6 +233,10 @@
         background: #8D81AC;
         @include size(119px, 37px); 
         border: none;
+        &:hover{
+            color: #8D81AC;
+            background-color: #FFF;
+        }
     }
     .burger_nav{
         position: absolute;
@@ -86,10 +264,11 @@
         }
     }
     .header_content{
+        width: 100%;
         @include display(flex,space-between,center);
         flex-direction: column;
-        background-image: url(../img/img\ 2.png);
-        // @include back(cover,no-repeat,center,fixed);
+        background-image: url(../img/backHeaderMobil.png);
+        @include back(cover,no-repeat,center,fixed);
         height: 591px;
         .header_title{
             text-align: center;
@@ -101,10 +280,12 @@
             h2{
                 @include fontz(18px,24px,400,#8D81AC);
                 @include marginTB(19px, 14px); 
+                padding: 0 10px 0 10px;
 
             }
             h3{
                 @include fontz(14px,14px,400,#848E97);
+                text-transform: uppercase;
 
             }
         }    
@@ -119,6 +300,10 @@
             @include fontz(18px,20px,700,#FFFFFF);
             position: absolute;
             top: -22px;
+            &:hover{
+                color: #8D81AC;
+                background-color: #FFF;
+            }
             
         }
         span{
@@ -129,6 +314,189 @@
     
    }
 }
+
+@media (min-width: 480px){
+    .header{
+        .header_nav{
+            @include display(flex,space-between,flex-start);
+            height: 118px;
+            .header_nav_logo{
+                @include display(flex,center,center);
+                margin-top: 22px;
+                margin-left: 20px;
+                svg:hover + .logo_title, 
+                .logo_title:hover{
+                        color: #FFFFFF;
+                }            
+                .logo_title{
+                    display: block;
+                    padding-left: 17px;
+                }
+             }
+             .header_links{
+                 display: block;
+                 @include display(flex,space-evenly,center);
+                 position: absolute;
+                 width: 100%;
+                 top: 85px;
+                 li{
+                    a{
+                 @include fontz(16px,18px,700,#8D81AC);
+                 &:hover{
+                    color: #FFFFFF;
+                }
+                    }
+                 }
+             }
+
+             .header_nav_button{
+                @include fontz(16px,16px,700,#FFFFFF);
+                @include size(145px, 38px); 
+                margin-top: 24px;
+                margin-right: 20px;
+                &:hover{
+                    color: #8D81AC;
+                    background-color: #FFF;
+                }
+                
+             }
+             .burger_box{
+                display: none;
+             }
+        }
+     
+     .header_content{
+         height: 673px;
+                  background-image: url(../img/backHeader.png);
+         .header_title{
+             h1{
+                 margin-top: 187px;
+                 @include fontz(72px,72px,700,#FFFFFF);
+             }
+             h2{
+                 font-family: Lato;
+                 @include fontz(24px,24px,400,#8D81AC);
+                 @include marginTB(19px, 19px); 
+ 
+             }
+             h3{
+                 @include fontz(14px,14px,400,#848E97);
+ 
+             }
+         }    
+     }
+     .button_content{
+         .header_button-down{
+             @include size(390px, 62px); 
+             @include fontz(21px,23px,700,#FFFFFF);
+             top: -31px;
+             &:hover{
+                color: #8D81AC;
+                background-color: #FFF;
+            }
+             
+         }
+         span{
+             @include fontz(14px,14px,400,#848E97);
+             margin-top: 50px;
+
+         }
+     }
+     
+    }
+ }
+
+ @media (min-width: 993px){
+    .header{
+        .header_nav{
+            max-width: 1200px;
+            @include display(flex,space-between,center);
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100px;
+            .header_nav_logo{
+                @include display(flex,center,center);
+                margin-top: 0;
+                padding-left: 10px;
+                .logo_title{
+                    display: block;
+                    padding-left: 17px;
+                    &:hover{
+                        color: #FFF;
+                    }
+                }
+                img{
+                @include size(43px, 41px); 
+
+                }
+             }
+             .header_links{
+                 display: block;
+                 @include display(flex,space-around,center);
+                 position: absolute;
+                 width: 527px;
+                 right: 233px;
+                 top: 40px;
+                 li{
+                    a{
+                 @include fontz(16px,17px,700,#8D81AC);
+                 &:hover{
+                    color: #FFF;
+                }
+                    }
+                   
+                 }
+             }
+
+             .header_nav_button{
+                @include fontz(16px,17px,700,#FFFFFF);
+                @include size(145px, 37px); 
+                margin-top: 0;
+                padding-right: 10px;
+                &:hover{
+                    color: #8D81AC;
+                    background-color: #FFF;
+                }
+             }
+        }
+     
+     .header_content{
+         height: 798px;
+         background-image: url(../img/backHeader.png);
+         .header_title{
+             h1{
+                 margin-top: 183px;
+                 @include fontz(82px,82px,700,#FFFFFF);
+             }
+             h2{
+                 font-family: Lato;
+                 @include fontz(30px,30px,400,#8D81AC);
+ 
+             }
+             h3{
+                 @include fontz(16px,16px,400,#848E97);
+ 
+             }
+         }    
+     }
+     .button_content{
+         .header_button-down{
+             @include fontz(21px,22px,700,#FFFFFF);
+             top: -31px;
+             &:hover{
+                color: #8D81AC;
+                background-color: #FFF;
+            }
+             
+         }
+         span{
+             @include fontz(14px,15px,400,#848E97);
+             margin-top: 50px;
+
+         }
+     }
+     
+    }
+ }
 
 .header_nav_button{
     @extend %ffM;
@@ -152,3 +520,26 @@
     background: #8D81AC;
     @extend %ffM;
 }
+
+.logo_title{
+    @extend %ffL;
+    @include fontz(24px,16px,700,#8D81AC);
+    text-transform: uppercase;
+}
+
+.header_links{
+   li{
+    a{
+        @extend %ffM;
+    }
+   }
+}
+
+.header_nav_logo{
+    svg{
+        fill: #8D81AC;
+        &:hover{
+            fill: #FFFFFF;
+        }
+    }
+ }

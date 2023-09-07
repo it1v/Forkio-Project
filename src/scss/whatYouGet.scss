@@ -1,0 +1,217 @@
+@media (min-width: 20px) {
+  .what-you-get__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .what-you-get__div-box:nth-child(5) {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .what-you-get__div-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .what-you-get__div-content-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .what-you-get__div-content-p {
+    color: #848e97;
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 0.75em;
+    width: 95%;
+  }
+  .what-you-get__div-content-photo-code-small {
+    width: 100%;
+    height: 381px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .what-you-get__div-content-photo-code-big {
+    display: none;
+  }
+
+  .what-you-get__div-box {
+    width: 100%;
+  }
+  .what-you-get {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7.5em;
+    min-width: 320px;
+  }
+}
+
+.what-you-get__h2 {
+  color: #8d81ac;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+margin-bottom: 20px;
+}
+
+.what-you-get__div-box:nth-child(5) {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.what-you-get__div-content-h6 {
+  color: #323232;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 1.75em;
+}
+
+.what-you-get__div-content-photo {
+  margin-top: 2.25em;
+}
+
+@media screen and (min-width: 480px) {
+  .what-you-get {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7.5em;
+    min-width: 320px;
+  }
+
+  .what-you-get__div-box {
+    width: 100%;
+  }
+
+  .what-you-get__div-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+
+  .what-you-get__div-content-text {
+    width: 95%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 35px;
+  }
+  .what-you-get__div-content-p {
+    color: #848e97;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 0.75em;
+    text-align: start;
+  }
+  .what-you-get__div-content-photo-code-small {
+    display: none;
+  }
+
+  .what-you-get__div-content-photo-code-big {
+    display: flex;
+    align-items: flex-end;
+    width: 420px;
+    height: 270px;
+  }
+
+  .what-you-get__div-content-photo:nth-child(1) {
+    margin-top: 2.25em;
+    width: 95px;
+    height: 53px;
+    margin-left: 20px;
+  }
+
+  .special-svg{
+    margin-left: 0.5em;
+    width: 95px;
+    height: 53px;
+    margin-top: 2.25em;
+  }
+
+  .what-you-get__div-content-photo:nth-child(2) {
+    margin-top: 2.25em;
+    width: 90px;
+    height: 80px;
+  }
+  .what-you-get__div-content-photo:nth-child(3) {
+    margin-top: 2.25em;
+    width: 60px;
+    height: 84px;
+  }
+  .what-you-get__div-content-photo:nth-child(4) {
+    margin-top: 2.25em;
+    width: 71px;
+    height: 71px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+    .what-you-get {
+        display: block;
+        margin-top: 7.5em;
+        min-width: 320px;
+        margin-bottom: 2.5em;
+      }
+
+
+  .what-you-get__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+
+  .what-you-get__div-content-photo-code-big {
+
+
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+    .what-you-get__div-content-photo-code-big {
+      width: 550px;
+      height: 350px;
+
+    }
+  }
+
+@media screen and (min-width: 1250px) {
+
+    .what-you-get__div-big-box{
+        margin-left: 11em;
+    }
+  .what-you-get__div-content-photo-code-big {
+    width: 700px;
+    height: 519px;
+
+  }
+}

@@ -1,6 +1,20 @@
 # Step-Project-Forkio
 
+Спащенко Людмила - завдання для студента №1
 
+Ткаченко Владислав - завдання для студента №2 
+
+Використані пакети:
+gulp
+gulp-sass
+browser-sync
+gulp-js-minify
+gulp-uglify
+gulp-clean-css
+gulp-clean
+gulp-concat
+gulp-imagemin
+gulp-autoprefixer
 
 ## Getting started
 
